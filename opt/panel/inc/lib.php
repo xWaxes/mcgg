@@ -543,7 +543,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Copy spigot
 	if ($_POST['version'] == '1.10.2') {
 		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
-	} else if ($_POST['version'] == '1.16.4') {
+	} else if ($_POST['version'] == '1.16.5') {
 		copy('serverbase/purpurclip.jar',$_POST['dir'].'/purpurclip.jar');
 	} else if ($_POST['version'] == '1.12.2') {
 		copy('serverbase/spigot-1.12.2.jar',$_POST['dir'].'/spigot-1.12.2.jar');
