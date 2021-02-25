@@ -98,7 +98,7 @@ if(isset($_POST['key'])) {
 		function modify(key) {
     		jQuery(document).ready(function($){
 			var $key = key
-			alert("The ngrok key has been set to "+$key)
+			alert("Klucz ngrok zostal zmieniony na "+$key)
 	          $.ajax({
 	                url: 'ajax.php', //window.location points to the current url. change is needed.
 	                type: 'POST',
@@ -139,7 +139,7 @@ if(isset($_POST['key'])) {
 				req: 'players'
 			}, function (data) {
 				if (data.error) {
-					$('#lbl-players').text('Server Offline').attr('title', 'Please allow the query in server.properties to receive server information.').tooltip();
+					$('#lbl-players').text('Serwer jest offline').attr('title', 'Please allow the query in server.properties to receive server information.').tooltip();
 				} else {
 					try{
 						console.log(data);

@@ -163,16 +163,16 @@ if ($use_auth) {
             <form class="form-signin" action="" method="post" autocomplete="off">
                 <img class="mb-4" src="https://image.ibb.co/k92AFQ/h3k_logo_dark.png" alt="MCHostPanel">
                 <h1 class="h3 mb-3 font-weight-normal">File Manager</h1>
-                <label for="fm_usr" class="sr-only">Username</label>
+                <label for="fm_usr" class="sr-only">Uzytkownik</label>
                 <input type="text" id="fm_usr" name="fm_usr" class="form-control" placeholder="Username" required="" autofocus="">
-                <label for="fm_pwd" class="sr-only">Password</label>
+                <label for="fm_pwd" class="sr-only">Haslo</label>
                 <input type="password" id="fm_pwd" name="fm_pwd" class="form-control mt-2" placeholder="Password" required="">
                 <div class="checkbox mb-3">
                     <label>
-                        <input type="checkbox" value="remember-me" aria-label="Remember me"> Remember me
+                        <input type="checkbox" value="remember-me" aria-label="Remember me"> Zapamietaj mnie
                     </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block mt-4" type="submit" role="button">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block mt-4" type="submit" role="button">Zaloguj</button>
                 <p class="mt-5 mb-3 text-muted">© CCP Programmers</p>
             </form>
         </div>

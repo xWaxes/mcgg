@@ -40,7 +40,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 <form class="modal form-horizontal" action="dashboard.php" method="post">
 	<div class="modal-header" align="center">
 		<h1><i class="fa fa-server" aria-hidden="true"></i> MC<span style="color:gold">GG</span></h1>
-		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server(s) running...</h3>
+		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> aktywnych serwerow...</h3>
 	</div>
 	<div class="modal-body">
 		<?php
@@ -48,7 +48,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 			echo '<p class="alert alert-error">Login information is incorrect.</p>';
 		?>
 		<div class="control-group">
-			<label class="control-label" for="user">Username:</label>
+			<label class="control-label" for="user">Uzytkownik:</label>
 
 			<div class="controls">
 				<div class="input-prepend">
@@ -58,7 +58,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="pass">Password:</label>
+			<label class="control-label" for="pass">Haslo:</label>
 
 			<div class="controls">
 				<div class="input-prepend">
@@ -72,6 +72,6 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 		<button class="btn btn-primary" type="submit">Login</button>
 	</div>
 </form>
-<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;"> <br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> <br>Time: <?=date('d/m/Y') ?></small>
+<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;"> <br>Gosc: <?=$_SERVER['REMOTE_ADDR'] ?> <br>Data: <?=date('d/m/Y') ?></small>
 	<script src="js/header.js"></script>
 </body>

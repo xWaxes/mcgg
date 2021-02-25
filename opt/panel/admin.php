@@ -49,7 +49,7 @@ if(isset($_POST['action'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>Administration | MCHostPanel</title>
+	<title>Panel Administracyjny</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -207,7 +207,7 @@ if(isset($_POST['action'])) {
 
 			<form action="admin.php" method="post" autocomplete="off">
 				<input type="hidden" name="action" value="user-add">
-				<legend>Add New User</legend>
+				<legend>Dodaj nowe konto</legend>
 				<div class="control-group">
 					<label class="control-label" for="user">Username</label>
 
@@ -239,37 +239,37 @@ if(isset($_POST['action'])) {
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="ram">Server Memory</label>
+					<label class="control-label" for="ram">RAM serwera</label>
 
 					<div class="controls">
 						<div class="input-append">
 							<input class="span3" type="number" name="ram" id="ram" value="512">
 							<span class="add-on">MB</span>
 						</div>
-						<span class="text-info">0 MB = No Server</span>
+						<span class="text-info">0 MB = Brak serwra</span>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="port">Server Port</label>
+					<label class="control-label" for="port">Port Serwera</label>
 
 					<div class="controls">
 						<input class="span3" type="number" name="port" id="port" value="<?php echo rand(1000,65535)?>">
-						<span class="text-info">0 = No Server</span>
+						<span class="text-info">0 = Brak serwera</span>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="role">User Role</label>
+					<label class="control-label" for="role">Rola Uzytkownika</label>
 
 					<div class="controls">
 						<select name="role" id="role" class="span4">
-							<option value="user" selected>User</option>
+							<option value="user" selected>Uzytkownik</option>
 							<option value="premium">Premium</option>
 							<option value="admin">Administrator</option>
 						</select>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="version">Server Version</label>
+					<label class="control-label" for="version">Wersja serwera</label>
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
@@ -285,7 +285,7 @@ if(isset($_POST['action'])) {
 						</select>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary">Add User</button>
+				<button type="submit" class="btn btn-primary">Dodaj Uzytkownika</button>
 			</form>
 			<form action="admin.php" method="post">
 				<legend>Delete a User</legend>
@@ -298,7 +298,7 @@ if(isset($_POST['action'])) {
 							echo '<option value="' . $u . '">' . $u . '</option>';
 					?>
 				</select>
-				<button type="submit" class="btn btn-danger">Delete user</button>
+				<button type="submit" class="btn btn-danger">Usun Uzytkownika</button>
 			</form>
 		</div>
 	</div>
