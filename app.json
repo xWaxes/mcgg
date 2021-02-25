@@ -6,28 +6,28 @@
     "minecraft"
   ],
   "logo": "https://raw.githubusercontent.com/Ren232/mcgg/master/logo.jpg",
-  "repository": "https://github.com/ren232/mcgg",
+  "repository": "https://github.com/xWaxes/mcgg",
   "stack": "heroku-18",
   "env": {
     "MINECRAFT_EULA": {
-      "description": "Do you accept the Minecraft EULA?",
+      "description": "Czy akceptujesz EULE?",
       "value": "true",
       "required": true
     },
     "DROPBOX_API_TOKEN": {
-      "description": "Your personal dropbox API token  (Goto https://www.dropbox.com/developers/apps Click on create app, Select Dropbox API, Select App folder, Name the app & create it, Click on the app, Goto Generated access token, Click on Generate and Copy the key.) ",
+      "description": "Twoje dropbox API (Idź do https://www.dropbox.com/developers/apps i kliknij create app, Wybierz API, Wybierz App folder, Nazwij aplikację i stwórz ją, Kliknij na aplikacje, Idź do Generated access token, Kliknij Generate i skopiuj klucz.) ",
       "required": true
     },
     "DNSEXIT_DNS": {
-      "description": "Your personal DnsExit DNS hostname (Not required)",
+      "description": "Twój personal DnsExit DNS hostname (Nie wymagane)",
       "required": false
     },
     "DNSEXIT_USER": {
-      "description": "Your DnsExit Username (Not required)",
+      "description": "Twój DnsExit Username (Nie wymagane)",
       "required": false
     },
     "DNSEXIT_PASS": {
-      "description": "Your DnsExit User password (Not required)",
+      "description": "Twój DnsExit User password (Nie wymagane)",
       "required": false
     }
   },
@@ -36,7 +36,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/ren232/mcgg"
+      "url": "https://github.com/xWaxes/mcgg"
     },
     {
       "url": "https://github.com/heroku/heroku-buildpack-php"
